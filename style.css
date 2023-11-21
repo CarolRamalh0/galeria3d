@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    background: rgb(233, 148, 208);
+    background: radial-gradient(circle, rgba(233, 148, 208, 1) 1%, rgba(233, 148, 208, 1) 29%, rgba(0, 0, 0, 1) 100%);
+    font-family: sans-serif;
+    color: #696565;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    border-radius: 12px;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://31114.cdn.simplo7.net/static/31114/sku/tactel-tactel-leve-rosa-pink--p-1611145644671.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRC16PU0_gRVuov0JyejY36nKeAlJKFsRFhddlZkZBWQ&s);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://i.pinimg.com/736x/32/d3/3f/32d33f41b386c00965d9ac35c9addda0.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://www.pontoxtecidos.com.br/static/567/sku/155904889535944.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://cdn.ecvol.com/s/www.lembrarte.com.br/produtos/feltro-liso-santa-fe-amarelo-canario-cor-080/g/0.png?v=);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAADMCAMAAABp5J6CAAAAk1BMVEUBmTQZhjweQSMAnTUDnDIBmjOeoJ0FmDsFmDABmDYLYicAmzoElzcXdzVSYlMFXyqUl5EQkzxSYFnGu8eapKCaqJqjnZelnJ2gn5+boZuisqqNmJQARRwAXy0AZC8NSyhGV06NnY8VkUEXeD2ak5OTlpVWXlYaVSwif0Qnaj1bVlqhjJMlMCQXRSEfQR8kPiAmOylCX9vBAAACHElEQVR4nO3SWVYCMRhE4V+bFgKNDYqCQ7cgOOGA+1+dwQeXUHWOufchea3vJHG5uLperpbLs0K6ya1Wi9u4u2/bru/bguq67mEdm/5xPh8WU9M0x2u7jlk7T1GPSipSTC9i180jpTQalFNd1xn+1A+rDK+rMsruqvqF7/rJIKKqo5SytElH+DjlT1+X01GepucxG9ejmKRSXnxwhKbmDx5FwQM48H8fcODuRaKAA3cvEgUcuHuRKODA3YtEAQfuXiQKOHD3IlHAgbsXiQIO3L1IFHDg7kWigAN3LxIFHLh7kSjgwN2LRAEH7l4kCjhw9yJRwIG7F4kCDty9SBRw4O5FooADdy8SBRy4e5Eo4MDdi0QBB+5eJAo4cPciUcCBuxeJAg7cvUgUcODuRaKAA3cvEgUcuHuRKODA3YtEAQfuXiQKOHD3IlHAgbsXiQIO3L1IFHDg7kWigAN3LxIFHLh7kSjgwN2LRAEH7l4kCjhw9yJRwIG7F4kCDty9SBRw4O5FooADdy8SBRy4e5Eo4MDdi0QBB+5eJAo4cPciUcCBuxeJAg7cvUgUcODuRaKAA3cvEgUcuHuRKODA3YtEAQfuXiQKOHD3IlHAgbsXiQIO3L1IFHDg7kWigAN3LxIFHLh7kSjgwN2LRAEH7l4kCjhw9yJRwDO8GhQJ34yH0UyaVEgZnc9m+xybl9eT8nrbx/vH6efX4XBaVt/7H/tojiahFi3XAAAAAElFTkSuQmCC);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://www.publicdomainpictures.net/pictures/200000/nahled/plain-blue-background.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://politintas.vtexassets.com/arquivos/ids/166342-800-800?v=637587736724800000&width=800&height=800&aspect=true);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://img.freepik.com/fotos-premium/azul-violeta_179286-60.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
